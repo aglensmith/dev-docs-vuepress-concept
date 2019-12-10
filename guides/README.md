@@ -3,7 +3,7 @@ sidebar: auto
 pageClass: custom-page-class
 ---
 
-# Guide
+# Guides
 
 Welcome to the VuePress starter template for [CodeSandbox](https://codesandbox.io). To learn more about VuePress in general and how to customize this project, please see the [VuePress documentation](https://v1.vuepress.vuejs.org).
 
@@ -43,6 +43,7 @@ VuePress also lets you specify custom classes for your pages in YAML front matte
 ---
 pageClass: custom-page-class
 ---
+
 ```
 
 Then you can write CSS to target that specific page in `.vuepress/styles/index.styl`:
@@ -75,11 +76,12 @@ VuePress also lets you specify custom layout components for specific pages, inst
 
 To do this, you add YAML front matter to your markdown file and specify the layout component you want to use.
 
- ```yaml
- ---
- layout: SpecialLayout
- ---
- ```
+```yaml
+---
+layout: SpecialLayout
+---
+
+```
 
 Visit our [Special Layout Page](/special-layout) to see an example of a custom page layout in action. This component is located in the `.vuepress/components` directory, which is where you register custom layout components and other components you want to have global access to.
 
@@ -87,14 +89,14 @@ Visit our [Special Layout Page](/special-layout) to see an example of a custom p
 
 When you want to create a custom VuePress theme, you add a `theme` directory under `.vuepress` (`.vuepress/theme`) and start by adding a `Layout.vue` file. From there it's the same as developing a normal Vue application. It is entirely up to you how you organize your theme.
 
-The content of your `markdown` files to be rendered will be available as a special global component called `<Content/>`. You will need to add this somewhere in your layout in order to render and display the content of the page/markdown file. 
+The content of your `markdown` files to be rendered will be available as a special global component called `<Content/>`. You will need to add this somewhere in your layout in order to render and display the content of the page/markdown file.
 
 The simplest theme can be a single `Layout.vue` component with the following content:
 
 ```html
 <template>
   <div class="theme-container">
-    <Content/>
+    <content />
   </div>
 </template>
 ```
