@@ -6,8 +6,8 @@
 // https://v1.vuepress.vuejs.org/config/
 
 module.exports = {
-  title: "Dev Center",
-  description: "BigCommerce Developer Documentation",
+  title: "BigCommerce Dev Center",
+  description: "Build amazing commerce solutions \n powered by the BigCommerce platform",
   themeConfig: {
     nav: [
       { text: "Guides", link: "/guides/" },
@@ -22,11 +22,12 @@ module.exports = {
       },
       {
         text: "Blog",
-        link: "httpsd/"
+        link: "https://medium.com/bigcommerce-developer-blog",
+        target: "_blank"
       },
       {
         text: "Changelog",
-        link: "https://github.com/vicbergquist/codesandbox-vuepress/"
+        link: "/changelog/"
       }
     ],
     sidebar: [
@@ -53,5 +54,8 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  head: [
+    ['script', { src: '/js/dev-docs.js' }]
+  ]
 };

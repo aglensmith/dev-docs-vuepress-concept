@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.png
+heroImage: /images/hero.svg
 actionText: Get Started →
 actionLink: /api-docs/
 features:
@@ -11,6 +11,10 @@ features:
   - title: API Reference
     details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
   - title: Stencil Object Reference
+    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+  - title: BigCommerce for WordPress
+    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+  - title: Tools and Resources
     details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
